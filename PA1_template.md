@@ -47,10 +47,10 @@ plot(per.interval$Group.1, per.interval$x, xlab="intervals", ylab="average steps
 ```r
 # 2. Which 5-minute interval, on average across all the days in the dataset,
 # contains the maximum number of steps?
-max_interval <- which.max(per.interval$x)
+max_interval <- per.interval$Group.1[which.max(per.interval$x)]
 ```
 
-Interval with Max Number of Steps: 104
+Interval with Max Number of Steps: 835
 
 ## Imputing missing values
 
